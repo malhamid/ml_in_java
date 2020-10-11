@@ -4,7 +4,7 @@ import weka.classifiers.trees.J48;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
-public class Main {
+public class WekaExample {
 
     public static void main(String[] args) throws Exception {
         // Specifying the datasource
