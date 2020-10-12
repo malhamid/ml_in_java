@@ -41,6 +41,11 @@ public class MNISTExample {
         DataSetIterator MNISTTrain = new MnistDataSetIterator(batchSize,true,seed);
         DataSetIterator MNISTTest = new MnistDataSetIterator(batchSize,false,seed);
 
+        log.info("The size of the training dataset: " + MNISTTrain.batch());
+        log.info("The number of total labels found in the training dataset " + MNISTTrain.totalOutcomes());
+        log.info("The size of the test dataset: " + MNISTTest.batch());
+        log.info("The number of total labels found in the test dataset " + MNISTTest.totalOutcomes());
+
         log.info("Building the CNN model");
         // Building the CNN model
         MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
